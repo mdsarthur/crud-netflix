@@ -6,14 +6,8 @@ public class Diretor extends Pessoa
 {
 	// Atributos
 	private BigDecimal valorMinimoDeContratacao;
-
-	// Construtores
-	public Diretor()
-	{
-		super();
-	}
 	
-	//Getters e Setters
+	// Getters e Setters
 	public BigDecimal getValorMinimoDeContratacao()
 	{
 		return valorMinimoDeContratacao;

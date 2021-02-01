@@ -9,12 +9,6 @@ public class Filme extends Titulo
 	private String saga;
 	private Duration duracao;
 	private BigDecimal vendaEmBilheteria;
-	
-	// Construtores 	
-	public Filme()
-	{
-		super();
-	}
 
 	// Getters e Setters
 	public String getSaga()
@@ -40,5 +34,14 @@ public class Filme extends Titulo
 	public void setVendaEmBilheteria(BigDecimal vendaEmBilheteria)
 	{
 		this.vendaEmBilheteria = vendaEmBilheteria;
-	}	
+	}
+
+	// Substituicao de Metodos
+	
+	@Override
+	public String toString()
+	{
+		return this.getNome() + " " + this.getAnoDeEstreia() + " " + this.getId();
+	}
+	
 }

@@ -7,12 +7,6 @@ public class Produtor extends Pessoa
 	// Atributos
 	private BigDecimal valorMaximoDeOrcamento;
 
-	// Construtores
-	public Produtor()
-	{
-		super();
-	}
-
 	// Getters e Setters	
 	public BigDecimal getValorMaximoDeOrcamento()
 	{

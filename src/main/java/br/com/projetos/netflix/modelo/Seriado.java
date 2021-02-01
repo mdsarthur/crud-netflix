@@ -10,12 +10,6 @@ public class Seriado extends Titulo
 	private boolean spinOff;
 	private List<Temporada> temporadas;
 	
-	// Construtor
-	public Seriado()
-	{
-		super();
-	}
-	
 	// Getters e Setters
 	public int getNumeroDeTemporadas()
 	{

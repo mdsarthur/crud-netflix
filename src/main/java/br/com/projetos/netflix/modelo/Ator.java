@@ -6,12 +6,6 @@ public class Ator extends Pessoa
 {
 	// Atributos
 	private BigDecimal valorMedioPorHora;
-	
-	// Construtores
-	public Ator()
-	{
-		super();
-	}
 
 	// Getters e Setters
 	public BigDecimal getValorMedioPorHora()
