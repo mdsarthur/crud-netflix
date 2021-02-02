@@ -6,19 +6,20 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import br.com.projetos.netflix.modelo.Filme;
-import br.com.projetos.netflix.modelo.Seriado;
+// import br.com.projetos.netflix.modelo.Seriado;
 
 public class Banco
 {	
 	private List<Filme> filmes;
-	private List<Seriado> seriados;
+	// private List<Seriado> seriados;
 	
 	public Banco()
 	{
 		this.filmes = new ArrayList<Filme>();
-		this.seriados = new ArrayList<Seriado>();
+		// this.seriados = new ArrayList<Seriado>();
 	}
 	
+	@SuppressWarnings("unused")
 	private Long generateMovieId()
 	{
 		if (this.filmes.isEmpty())

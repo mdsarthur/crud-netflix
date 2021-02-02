@@ -2,7 +2,9 @@ package br.com.projetos.netflix.modelo;
 
 import java.util.List;
 
-public abstract class Titulo
+import br.com.projetos.netflix.banco.InterfaceEntidade;
+
+public abstract class Titulo implements InterfaceEntidade
 {
 	// Atributos
 	private Long id;
@@ -15,12 +17,14 @@ public abstract class Titulo
 	private List<Produtor> produtoresPrincipais;
 	private List<Diretor> diretoresPrincipais;
 
-	// Getters e Setters	
+	// Getters e Setters
+	@Override
 	public Long getId()
 	{
 		return id;
 	}
 	
+	@Override
 	public void setId(Long id)
 	{
 		this.id = id;

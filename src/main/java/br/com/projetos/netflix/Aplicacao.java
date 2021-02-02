@@ -2,7 +2,7 @@ package br.com.projetos.netflix;
 
 import java.util.Scanner;
 
-import br.com.projetos.netflix.banco.Banco;
+import br.com.projetos.netflix.banco.NovoBanco;
 import br.com.projetos.netflix.modelo.Filme;
 
 public class Aplicacao
@@ -10,7 +10,7 @@ public class Aplicacao
 	public static void main(String[] args)
 	{
 		Scanner in = new Scanner(System.in);
-		Banco banco = new Banco();
+		NovoBanco banco = new NovoBanco();
 		Filme filme1 = new Filme();
 		Filme filme1Novo = new Filme();
 		
@@ -26,7 +26,7 @@ public class Aplicacao
 		System.out.println(banco.updateMovie(filme1Novo));
 		System.out.println(banco.findAllMovies());
 		
-		System.out.println(banco.deleteMovie(5L));
+		System.out.println(banco.deleteMovie(1L));
 		System.out.println(banco.findAllMovies());
 		
 	}
