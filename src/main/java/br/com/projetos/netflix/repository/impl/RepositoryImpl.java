@@ -9,8 +9,7 @@ import br.com.projetos.netflix.entidade.Entidade;
 import br.com.projetos.netflix.repository.Repository;
 
 public class RepositoryImpl<E extends Entidade> implements Repository<E>
-{
-	
+{	
 	private List<E> itens;
 	
 	public RepositoryImpl()
@@ -69,7 +68,5 @@ public class RepositoryImpl<E extends Entidade> implements Repository<E>
 	{
 		E itemDelete = this.findItemById(id);
 		return this.itens.remove(itemDelete);
-	}
-	
-	
+	}	
 }
