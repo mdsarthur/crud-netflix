@@ -2,9 +2,9 @@ package br.com.projetos.netflix.modelo;
 
 import java.util.List;
 
-import br.com.projetos.netflix.banco.InterfaceEntidade;
+import br.com.projetos.netflix.entidade.Entidade;
 
-public abstract class Titulo implements InterfaceEntidade
+public abstract class Titulo implements Entidade
 {
 	// Atributos
 	private Long id;

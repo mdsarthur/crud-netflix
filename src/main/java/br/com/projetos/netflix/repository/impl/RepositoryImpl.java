@@ -1,34 +1,25 @@
-package br.com.projetos.netflix.banco;
+package br.com.projetos.netflix.repository.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class BancoParaEntidade<E extends InterfaceEntidade>
-{	
+import br.com.projetos.netflix.entidade.Entidade;
+import br.com.projetos.netflix.repository.Repository;
+
+public class RepositoryImpl<E extends Entidade> implements Repository<E>
+{
+	
 	private List<E> itens;
 	
-	public BancoParaEntidade()
+	public RepositoryImpl()
 	{
 		this.itens = new ArrayList<E>();
 	}
-	
-	Long generateItemId()
-	{
-		if (this.itens.isEmpty())
-		{
-			return Long.valueOf(1);
-		}
-		else
-		{
-			int ultimoItem = this.itens.size() - 1;
-			Long proximoId = this.itens.get(ultimoItem).getId() + 1;
-			return proximoId;
-		}
-	}
-	
-	boolean saveItem(E item)
+
+	@Override
+	public boolean saveItem(E item)
 	{
 		if (this.itens.contains(item))
 		{
@@ -37,11 +28,12 @@ public class BancoParaEntidade<E extends InterfaceEntidade>
 		else
 		{
 			return this.itens.add(item);
-		}		
+		}
 	}
-	
-	E findItemById(Long id)
-	{		
+
+	@Override
+	public E findItemById(Long id)
+	{
 		for (E item : itens)
 		{
 			if (item.getId().equals(id))
@@ -51,8 +43,9 @@ public class BancoParaEntidade<E extends InterfaceEntidade>
 		}
 		throw new NoSuchElementException("Nenhum item com este ID foi encontrado");
 	}
-	
-	List<E> findAllItems()
+
+	@Override
+	public List<E> findAllItems()
 	{
 		if (this.itens.isEmpty())
 		{
@@ -60,8 +53,9 @@ public class BancoParaEntidade<E extends InterfaceEntidade>
 		}
 		return Collections.unmodifiableList(this.itens);
 	}
-	
-	boolean updateItem(E itemSubstituto)
+
+	@Override
+	public boolean updateItem(E itemSubstituto)
 	{
 		Long idItem = itemSubstituto.getId();
 		E itemAntigo = this.findItemById(idItem);
@@ -69,10 +63,13 @@ public class BancoParaEntidade<E extends InterfaceEntidade>
 		this.itens.set(indiceItemAntigo, itemSubstituto);
 		return true; // Sera alterado no proximo commit
 	}
-	
-	boolean deleteItem(Long id)
+
+	@Override
+	public boolean deleteItem(Long id)
 	{
 		E itemDelete = this.findItemById(id);
 		return this.itens.remove(itemDelete);
 	}
+	
+	
 }
