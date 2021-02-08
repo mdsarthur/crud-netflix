@@ -1,14 +1,14 @@
-package br.com.projetos.netflix.repository.impl;
+package br.com.projects.netflix.repository.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import br.com.projetos.netflix.entidade.Entidade;
-import br.com.projetos.netflix.repository.Repository;
+import br.com.projects.netflix.entity.Entity;
+import br.com.projects.netflix.repository.Repository;
 
-public class RepositoryImpl<E extends Entidade> implements Repository<E>
+public class RepositoryImpl<E extends Entity> implements Repository<E>
 {	
 	private List<E> itens;
 	
@@ -22,7 +22,7 @@ public class RepositoryImpl<E extends Entidade> implements Repository<E>
 	{
 		if (this.itens.contains(item))
 		{
-			throw new IllegalArgumentException("O item informado ja esta presente na lista");
+			throw new IllegalArgumentException("This item already exists in the database");
 		}
 		else
 		{
@@ -40,7 +40,7 @@ public class RepositoryImpl<E extends Entidade> implements Repository<E>
 				return item;
 			}			
 		}
-		throw new NoSuchElementException("Nenhum item com este ID foi encontrado");
+		throw new NoSuchElementException("No items with this ID were found");
 	}
 
 	@Override
@@ -48,19 +48,19 @@ public class RepositoryImpl<E extends Entidade> implements Repository<E>
 	{
 		if (this.itens.isEmpty())
 		{
-			System.out.println("Aviso! A lista esta vazia!");
+			System.out.println("Warning! The list is empty!");
 		}
 		return Collections.unmodifiableList(this.itens);
 	}
 
 	@Override
-	public boolean updateItem(E itemSubstituto)
+	public boolean updateItem(E substituteItem)
 	{
-		Long idItem = itemSubstituto.getId();
-		E itemAntigo = this.findItemById(idItem);
-		int indiceItemAntigo = this.itens.indexOf(itemAntigo);
-		this.itens.set(indiceItemAntigo, itemSubstituto);
-		return true; // Sera alterado no proximo commit
+		Long itemId = substituteItem.getId();
+		E oldItem = this.findItemById(itemId);
+		int indexOldItem = this.itens.indexOf(oldItem);
+		this.itens.set(indexOldItem, substituteItem);
+		return true; // Will be changed on next commit
 	}
 
 	@Override

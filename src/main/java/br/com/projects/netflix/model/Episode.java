@@ -1,15 +1,15 @@
-package br.com.projetos.netflix.modelo;
+package br.com.projects.netflix.model;
 
 import java.time.Duration;
 
-public class Episodio
+public class Episode
 {
-	// Atributos
+	// Attributes
 	private Long id;
-	private int numeroDoEpisodio;
-	private Duration tempoMedioDeDuracao;
+	private int episodeNumber;
+	private Duration averageEpisodeDuration;
 
-	// Getters e Setters	
+	// Getters and Setters	
 	public Long getId()
 	{
 		return id;
@@ -20,27 +20,25 @@ public class Episodio
 		this.id = id;
 	}
 
-	public int getNumeroDoEpisodio()
+	public int getEpisodeNumber()
 	{
-		return numeroDoEpisodio;
+		return episodeNumber;
 	}
 
-	public void setNumeroDoEpisodio(int numeroDoEpisodio)
+	public void setEpisodeNumber(int episodeNumber)
 	{
-		this.numeroDoEpisodio = numeroDoEpisodio;
+		this.episodeNumber = episodeNumber;
 	}
 
-	public Duration getTempoMedioDeDuracao()
+	public Duration getAverageEpisodeDuration()
 	{
-		return tempoMedioDeDuracao;
+		return averageEpisodeDuration;
 	}
 
-	public void setTempoMedioDeDuracao(Duration tempoMedioDeDuracao)
+	public void setAverageEpisodeDuration(Duration averageEpisodeDuration)
 	{
-		this.tempoMedioDeDuracao = tempoMedioDeDuracao;
+		this.averageEpisodeDuration = averageEpisodeDuration;
 	}
-	
-	// Substituicao de Metodos
 	
 	@Override
 	public int hashCode()
@@ -60,7 +58,7 @@ public class Episodio
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Episodio other = (Episodio) obj;
+		Episode other = (Episode) obj;
 		if (id == null)
 		{
 			if (other.id != null)
