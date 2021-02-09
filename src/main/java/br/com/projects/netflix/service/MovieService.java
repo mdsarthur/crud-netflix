@@ -3,7 +3,14 @@ package br.com.projects.netflix.service;
 import java.util.List;
 
 import br.com.projects.netflix.model.Movie;
+import br.com.projects.netflix.service.impl.MovieServiceImpl;
 
+/**
+ * This interface determinates all the necessary methods that every {@link MovieServiceImpl} must define to work properly.
+ * @author Arthur Souza
+ * @since 1.0
+ * @see br.com.projects.netflix.service.impl.MovieServiceImpl
+ */
 public interface MovieService
 {
 	public boolean saveMovie(Movie movie);

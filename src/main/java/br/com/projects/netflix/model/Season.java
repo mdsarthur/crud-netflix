@@ -3,6 +3,11 @@ package br.com.projects.netflix.model;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * This class is used by {@link TvShow} class in order to specify characteristics of a season from a tv show.
+ * @author Arthur Souza
+ * @since 1.0
+ */
 public class Season
 {
 	// Attributes

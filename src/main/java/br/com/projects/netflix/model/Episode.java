@@ -2,6 +2,11 @@ package br.com.projects.netflix.model;
 
 import java.time.Duration;
 
+/**
+ * This class is used by {@link Season} class in order to specify characteristics of an episode from a season, which belongs to a {@link TvShow}.
+ * @author Arthur Souza
+ * @since 1.0
+ */
 public class Episode
 {
 	// Attributes

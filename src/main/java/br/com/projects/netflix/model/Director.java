@@ -2,6 +2,11 @@ package br.com.projects.netflix.model;
 
 import java.math.BigDecimal;
 
+/**
+ * This class extends {@link Person} class, specifying a Director.
+ * @author Low
+ * @since 1.0
+ */
 public class Director extends Person
 {
 	// Attributes

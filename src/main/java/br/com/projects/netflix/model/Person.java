@@ -5,6 +5,12 @@ import java.time.LocalDate;
 import br.com.projects.netflix.entity.Entity;
 import br.com.projects.netflix.model.enums.Sex;
 
+/**
+ * This abstract class defines all the basic attributes needed by {@link Actor}, {@link Director} or {@link Producer}.
+ * 
+ * @author Arthur Souza
+ * @since 1.0
+ */
 public abstract class Person implements Entity
 {
 	// Attributes

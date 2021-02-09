@@ -2,6 +2,11 @@ package br.com.projects.netflix.model;
 
 import java.math.BigDecimal;
 
+/**
+ * This class extends {@link Person} class, specifying a Producer.
+ * @author Low
+ * @since 1.0
+ */
 public class Producer extends Person
 {
 	// Attributes

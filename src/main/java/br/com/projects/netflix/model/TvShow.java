@@ -3,6 +3,11 @@ package br.com.projects.netflix.model;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * This class extends {@link Title} class, specifying a TvShow.
+ * @author Low
+ * @since 1.0
+ */
 public class TvShow extends Title
 {
 	// Attributes

@@ -3,6 +3,11 @@ package br.com.projects.netflix.model;
 import java.math.BigDecimal;
 import java.time.Duration;
 
+/**
+ * This class extends {@link Title} class, specifying a Movie.
+ * @author Low
+ * @since 1.0
+ */
 public class Movie extends Title
 {
 	// Attributes

@@ -7,6 +7,12 @@ import br.com.projects.netflix.entity.Entity;
 import br.com.projects.netflix.model.enums.AdvisoryRating;
 import br.com.projects.netflix.model.enums.Genre;
 
+/**
+ * This abstract class defines all the basic attributes needed by a {@link Movie} or a {@link TvShow}.
+ * 
+ * @author Arthur Souza
+ * @since 1.0
+ */
 public abstract class Title implements Entity
 {
 	// Attributes
