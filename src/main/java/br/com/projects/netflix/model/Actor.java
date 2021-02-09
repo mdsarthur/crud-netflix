@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 /**
  * This class extends {@link Person} class, specifying an Actor.
- * @author Low
+ * @author Arthur Souza
  * @since 1.0
  */
 public class Actor extends Person

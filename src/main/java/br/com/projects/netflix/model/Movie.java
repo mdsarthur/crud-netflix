@@ -5,7 +5,7 @@ import java.time.Duration;
 
 /**
  * This class extends {@link Title} class, specifying a Movie.
- * @author Low
+ * @author Arthur Souza
  * @since 1.0
  */
 public class Movie extends Title

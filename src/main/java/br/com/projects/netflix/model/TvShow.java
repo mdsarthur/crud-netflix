@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * This class extends {@link Title} class, specifying a TvShow.
- * @author Low
+ * @author Arthur Souza
  * @since 1.0
  */
 public class TvShow extends Title
