@@ -1,4 +1,4 @@
-package br.com.projects.netflix.model;
+package br.com.arthur.projects.netflix.model;
 
 import java.time.Duration;
 

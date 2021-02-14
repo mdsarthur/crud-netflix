@@ -1,11 +1,11 @@
-package br.com.projects.netflix.model;
+package br.com.arthur.projects.netflix.model;
 
 import java.util.Collections;
 import java.util.List;
 
-import br.com.projects.netflix.entity.Entity;
-import br.com.projects.netflix.model.enums.AdvisoryRating;
-import br.com.projects.netflix.model.enums.Genre;
+import br.com.arthur.projects.netflix.entity.Entity;
+import br.com.arthur.projects.netflix.model.enums.AdvisoryRating;
+import br.com.arthur.projects.netflix.model.enums.Genre;
 
 /**
  * This abstract class defines all the basic attributes needed by a {@link Movie} or a {@link TvShow}.

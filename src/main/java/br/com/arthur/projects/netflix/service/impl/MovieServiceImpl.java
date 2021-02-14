@@ -1,11 +1,11 @@
-package br.com.projects.netflix.service.impl;
+package br.com.arthur.projects.netflix.service.impl;
 
 import java.util.List;
 
-import br.com.projects.netflix.model.Movie;
-import br.com.projects.netflix.service.MovieService;
-import br.com.projects.netflix.repository.Repository;
-import br.com.projects.netflix.repository.impl.RepositoryImpl;
+import br.com.arthur.projects.netflix.model.Movie;
+import br.com.arthur.projects.netflix.repository.Repository;
+import br.com.arthur.projects.netflix.repository.impl.RepositoryImpl;
+import br.com.arthur.projects.netflix.service.MovieService;
 
 /**
  * This class is the implementation/definition of {@link MovieService} interface. It contains all the methods needed to
@@ -13,8 +13,8 @@ import br.com.projects.netflix.repository.impl.RepositoryImpl;
  * 
  * @author Arthur Souza
  * @since 1.0
- * @see br.com.projects.netflix.repository.Repository
- * @see br.com.projects.netflix.service.MovieService
+ * @see br.com.arthur.projects.netflix.repository.Repository
+ * @see br.com.arthur.projects.netflix.service.MovieService
  */
 public class MovieServiceImpl implements MovieService
 {	

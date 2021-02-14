@@ -1,12 +1,12 @@
-package br.com.projects.netflix.entity;
+package br.com.arthur.projects.netflix.entity;
 
-import br.com.projects.netflix.repository.impl.RepositoryImpl;
+import br.com.arthur.projects.netflix.repository.impl.RepositoryImpl;
 
 /**
  * This interface makes explicit two (2) methods that every model class must define to work properly with a {@link RepositoryImpl}.
  * @author Arthur Souza
  * @since 1.0
- * @see br.com.projects.netflix.repository.impl.RepositoryImpl
+ * @see br.com.arthur.projects.netflix.repository.impl.RepositoryImpl
  */
 public interface Entity
 {

@@ -1,12 +1,12 @@
-package br.com.projects.netflix;
+package br.com.arthur.projects.netflix;
 
 import java.util.Scanner;
 
-import br.com.projects.netflix.model.Movie;
-import br.com.projects.netflix.repository.Repository;
-import br.com.projects.netflix.repository.impl.RepositoryImpl;
-import br.com.projects.netflix.service.MovieService;
-import br.com.projects.netflix.service.impl.MovieServiceImpl;
+import br.com.arthur.projects.netflix.model.Movie;
+import br.com.arthur.projects.netflix.repository.Repository;
+import br.com.arthur.projects.netflix.repository.impl.RepositoryImpl;
+import br.com.arthur.projects.netflix.service.MovieService;
+import br.com.arthur.projects.netflix.service.impl.MovieServiceImpl;
 
 public class Application
 {

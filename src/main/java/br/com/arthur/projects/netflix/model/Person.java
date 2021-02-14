@@ -1,9 +1,9 @@
-package br.com.projects.netflix.model;
+package br.com.arthur.projects.netflix.model;
 
 import java.time.LocalDate;
 
-import br.com.projects.netflix.entity.Entity;
-import br.com.projects.netflix.model.enums.Sex;
+import br.com.arthur.projects.netflix.entity.Entity;
+import br.com.arthur.projects.netflix.model.enums.Sex;
 
 /**
  * This abstract class defines all the basic attributes needed by {@link Actor}, {@link Director} or {@link Producer}.

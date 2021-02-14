@@ -1,20 +1,20 @@
-package br.com.projects.netflix.repository.impl;
+package br.com.arthur.projects.netflix.repository.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import br.com.projects.netflix.entity.Entity;
-import br.com.projects.netflix.repository.Repository;
+import br.com.arthur.projects.netflix.entity.Entity;
+import br.com.arthur.projects.netflix.repository.Repository;
 
 /**
  * This class is the implementation/definition of {@link Repository} interface. It contains all the methods needed to
  * save, retrieve and modify objects of an model class that implements {@link Entity} interface.
  * @author Arthur Souza
  * @since 1.0
- * @see br.com.projects.netflix.repository.Repository
- * @see br.com.projects.netflix.entity.Entity
+ * @see br.com.arthur.projects.netflix.repository.Repository
+ * @see br.com.arthur.projects.netflix.entity.Entity
  */
 public class RepositoryImpl<E extends Entity> implements Repository<E>
 {	
