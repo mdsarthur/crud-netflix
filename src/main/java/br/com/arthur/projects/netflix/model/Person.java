@@ -2,7 +2,6 @@ package br.com.arthur.projects.netflix.model;
 
 import java.time.LocalDate;
 
-import br.com.arthur.projects.netflix.entity.Entity;
 import br.com.arthur.projects.netflix.model.enums.Sex;
 
 /**

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import br.com.arthur.projects.netflix.entity.Entity;
+import br.com.arthur.projects.netflix.model.Entity;
 import br.com.arthur.projects.netflix.repository.Repository;
 
 /**
@@ -14,7 +14,7 @@ import br.com.arthur.projects.netflix.repository.Repository;
  * @author Arthur Souza
  * @since 1.0
  * @see br.com.arthur.projects.netflix.repository.Repository
- * @see br.com.arthur.projects.netflix.entity.Entity
+ * @see br.com.arthur.projects.netflix.model.Entity
  */
 public class RepositoryImpl<E extends Entity> implements Repository<E>
 {	

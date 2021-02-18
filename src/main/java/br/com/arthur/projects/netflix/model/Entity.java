@@ -1,4 +1,4 @@
-package br.com.arthur.projects.netflix.entity;
+package br.com.arthur.projects.netflix.model;
 
 import br.com.arthur.projects.netflix.repository.impl.RepositoryImpl;
 

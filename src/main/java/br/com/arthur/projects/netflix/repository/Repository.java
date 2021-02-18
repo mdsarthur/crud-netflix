@@ -2,7 +2,7 @@ package br.com.arthur.projects.netflix.repository;
 
 import java.util.List;
 
-import br.com.arthur.projects.netflix.entity.Entity;
+import br.com.arthur.projects.netflix.model.Entity;
 import br.com.arthur.projects.netflix.repository.impl.RepositoryImpl;
 
 /**
@@ -11,7 +11,7 @@ import br.com.arthur.projects.netflix.repository.impl.RepositoryImpl;
  * @author Arthur Souza
  * @since 1.0
  * @see br.com.arthur.projects.netflix.repository.impl.RepositoryImpl
- * @see br.com.arthur.projects.netflix.entity.Entity
+ * @see br.com.arthur.projects.netflix.model.Entity
  */
 public interface Repository<E>
 {

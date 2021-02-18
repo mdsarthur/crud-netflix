@@ -3,7 +3,6 @@ package br.com.arthur.projects.netflix.model;
 import java.util.Collections;
 import java.util.List;
 
-import br.com.arthur.projects.netflix.entity.Entity;
 import br.com.arthur.projects.netflix.model.enums.AdvisoryRating;
 import br.com.arthur.projects.netflix.model.enums.Genre;
 
